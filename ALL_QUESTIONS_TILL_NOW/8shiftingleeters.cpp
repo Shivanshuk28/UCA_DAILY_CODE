@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     map<string,vector<string>>mpp;
-    vector<string>str {"abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"};
+    vector<string>str {"abc", "bcd", "acef", "zab", "az", "ba", "a", "z"};
     for(auto x:str){
         string pattern="";
         for(int i=1;i<x.size();i++){

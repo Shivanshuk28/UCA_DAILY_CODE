@@ -9,7 +9,7 @@ int main(){
                 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
                 'w', 'x', 'y', 'z', '0', '1', '2', '3',
                 '4', '5', '6', '7', '8', '9', '+', '/'};
-    string s="MNO";
+    string s="MNOP";
     string bit_string="";
     for(auto x:s){
         // int val=x-'Null';

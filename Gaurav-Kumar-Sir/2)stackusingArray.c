@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<assert.h>
 
-typedef struct Node Node;
+// typedef struct Node Node;
 
 int *array;
 int N=0;

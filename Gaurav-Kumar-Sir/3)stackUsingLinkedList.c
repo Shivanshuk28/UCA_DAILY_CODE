@@ -3,17 +3,17 @@
 #include<stdlib.h>
 #include<limits.h>
 #include<assert.h>
-#include "stack.h"
+// #include <stack.h>
 
-struct Node(){
+struct Node{
     int item;
-    Struct Node* next;
+    struct Node* next;
 };
 
 int N=0;
 struct Node* head=NULL;
 void push(int item){
-    struct Node* oldHead=Head;
+    struct Node* oldHead=head;
     head=(struct Node*) malloc(sizeof(struct Node));
     head->item=item;
     N++;
@@ -29,7 +29,7 @@ int pop(){
     free(temp);
     return item;
 }
-bool isEmpty(){
+int isEmpty(){
     return N==0;
 }
 int size(){
@@ -42,11 +42,11 @@ void testStack(){
     push(3);
     assert(pop()==3);
     assert(size()==2);
-    assert(isEmpty()==false);
+    assert(isEmpty()==0);
 
     assert(pop()==2);
     assert(size()==1);
-    assert(isEmpty()==false);
+    assert(isEmpty()==0);
 
     assert(pop()==1);
     assert(size()==0);
